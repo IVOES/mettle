@@ -1,0 +1,971 @@
+libreflect/src/exec.c:31:6: style: The scope of the variable 'fd' can be reduced. [variableScope]
+ int fd;
+     ^
+libreflect/src/map_elf.c:31:13: warning:inconclusive: Found suspicious operator '*' [constStatement]
+ ElfW(Ehdr) *ehdr;
+            ^
+libreflect/src/map_elf.c:32:13: warning:inconclusive: Found suspicious operator '*' [constStatement]
+ ElfW(Phdr) *phdr;
+            ^
+libreflect/src/memfd_exec.c:22:10: style: The scope of the variable 'l' can be reduced. [variableScope]
+ ssize_t l = 0;
+         ^
+libreflect/src/memfd_exec.c:22:12: style: Variable 'l' is assigned a value that is never used. [unreadVariable]
+ ssize_t l = 0;
+           ^
+mettle/extensions/sniffer/sniffer.c:339:11: style: The scope of the variable 'start_us' can be reduced. [variableScope]
+ uint64_t start_us;
+          ^
+mettle/extensions/sniffer/sniffer.c:340:6: style: The scope of the variable 'ret_val' can be reduced. [variableScope]
+ int ret_val = 0;
+     ^
+mettle/extensions/sniffer/sniffer.c:340:14: style: Variable 'ret_val' is assigned a value that is never used. [unreadVariable]
+ int ret_val = 0;
+             ^
+mettle/extensions/sniffer/sniffer.c:776:6: style: Unused variable: ret_val [unusedVariable]
+ int ret_val;
+     ^
+mettle/src/argv_split.c:15:6: style: The scope of the variable 'c' can be reduced. [variableScope]
+ int c;
+     ^
+mettle/src/base64.c:24:6: style: The scope of the variable 'i' can be reduced. [variableScope]
+ int i, bits, c, char_count;
+     ^
+mettle/src/base64.c:24:15: style: The scope of the variable 'c' can be reduced. [variableScope]
+ int i, bits, c, char_count;
+              ^
+mettle/src/base64.c:82:12: style: The scope of the variable 'c' can be reduced. [variableScope]
+ int bits, c, char_count;
+           ^
+mettle/src/buffer_queue.c:118:11: style: Checking if unsigned expression 'len' is less than zero. [unsignedLessThanZero]
+  if (len <= 0) {
+          ^
+mettle/src/buffer_queue.c:138:11: style: Checking if unsigned expression 'len' is less than zero. [unsignedLessThanZero]
+  if (len <= 0) {
+          ^
+mettle/src/buffer_queue.c:161:11: style: Checking if unsigned expression 'len' is less than zero. [unsignedLessThanZero]
+  if (len <= 0) {
+          ^
+mettle/src/buffer_queue.c:115:8: portability: 'data' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  data += bytes;
+       ^
+mettle/src/buffer_queue.c:153:8: portability: 'data' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  data += bytes;
+       ^
+mettle/src/bufferev.c:250:19: style:inconclusive: Function 'bufferev_connect_addrinfo' argument 2 names different: declaration 'src_addr' definition 'src'. [funcArgNamesDifferent]
+ struct addrinfo *src, struct addrinfo *dst, float timeout_s)
+                  ^
+mettle/src/bufferev.h:28:19: note: Function 'bufferev_connect_addrinfo' argument 2 names different: declaration 'src_addr' definition 'src'.
+ struct addrinfo *src_addr, struct addrinfo *dst_addr, float timeout_s);
+                  ^
+mettle/src/bufferev.c:250:19: note: Function 'bufferev_connect_addrinfo' argument 2 names different: declaration 'src_addr' definition 'src'.
+ struct addrinfo *src, struct addrinfo *dst, float timeout_s)
+                  ^
+mettle/src/bufferev.c:250:41: style:inconclusive: Function 'bufferev_connect_addrinfo' argument 3 names different: declaration 'dst_addr' definition 'dst'. [funcArgNamesDifferent]
+ struct addrinfo *src, struct addrinfo *dst, float timeout_s)
+                                        ^
+mettle/src/bufferev.h:28:46: note: Function 'bufferev_connect_addrinfo' argument 3 names different: declaration 'dst_addr' definition 'dst'.
+ struct addrinfo *src_addr, struct addrinfo *dst_addr, float timeout_s);
+                                             ^
+mettle/src/bufferev.c:250:41: note: Function 'bufferev_connect_addrinfo' argument 3 names different: declaration 'dst_addr' definition 'dst'.
+ struct addrinfo *src, struct addrinfo *dst, float timeout_s)
+                                        ^
+mettle/src/bufferev.c:105:28: portability: 'buf' is of type 'const void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+   rc = send(be->sock, buf + off, buflen - off, 0);
+                           ^
+mettle/src/log.h:104:0: information: Skipping configuration '__MINGW_PRINTF_FORMAT' since the value of '__MINGW_PRINTF_FORMAT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ __attribute__ ((format(METTLE_PRINTF_FORMAT, 1, 2)));
+^
+mettle/src/log.h:108:0: information: Skipping configuration '__MINGW_PRINTF_FORMAT' since the value of '__MINGW_PRINTF_FORMAT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ __attribute__ ((format(METTLE_PRINTF_FORMAT, 1, 2)));
+^
+mettle/src/log.h:116:0: information: Skipping configuration '__MINGW_PRINTF_FORMAT' since the value of '__MINGW_PRINTF_FORMAT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ __attribute__ ((format(METTLE_PRINTF_FORMAT, 3, 4)));
+^
+mettle/src/log.h:120:0: information: Skipping configuration '__MINGW_PRINTF_FORMAT' since the value of '__MINGW_PRINTF_FORMAT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ __attribute__ ((format(METTLE_PRINTF_FORMAT, 3, 4)));
+^
+mettle/src/c2.c:227:28: style:inconclusive: Function 'c2_set_cbs' argument 1 names different: declaration 'be' definition 'c2'. [funcArgNamesDifferent]
+void c2_set_cbs(struct c2 *c2,
+                           ^
+mettle/src/c2.h:29:28: note: Function 'c2_set_cbs' argument 1 names different: declaration 'be' definition 'c2'.
+void c2_set_cbs(struct c2 *be,
+                           ^
+mettle/src/c2.c:227:28: note: Function 'c2_set_cbs' argument 1 names different: declaration 'be' definition 'c2'.
+void c2_set_cbs(struct c2 *c2,
+                           ^
+mettle/src/c2.c:298:57: style:inconclusive: Function 'c2_transport_loop' argument 1 names different: declaration 'loop' definition 't'. [funcArgNamesDifferent]
+struct ev_loop * c2_transport_loop(struct c2_transport *t)
+                                                        ^
+mettle/src/c2.h:63:57: note: Function 'c2_transport_loop' argument 1 names different: declaration 'loop' definition 't'.
+struct ev_loop * c2_transport_loop(struct c2_transport *loop);
+                                                        ^
+mettle/src/c2.c:298:57: note: Function 'c2_transport_loop' argument 1 names different: declaration 'loop' definition 't'.
+struct ev_loop * c2_transport_loop(struct c2_transport *t)
+                                                        ^
+mettle/src/c2_http.c:43:11: style: Redundant initialization for 'split'. The initialized value is overwritten before it is read. [redundantInitialization]
+    split = strchr(host + 3, '/');
+          ^
+mettle/src/c2_http.c:40:16: note: split is initialized
+   char *split = ctx->uri;
+               ^
+mettle/src/c2_http.c:43:11: note: split is overwritten
+    split = strchr(host + 3, '/');
+          ^
+mettle/src/c2_http.c:83:11: style: Unused variable: len [unusedVariable]
+   size_t len;
+          ^
+mettle/src/tlv.h:99:0: information: Skipping configuration '__MINGW_PRINTF_FORMAT' since the value of '__MINGW_PRINTF_FORMAT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  __attribute__ ((format(METTLE_PRINTF_FORMAT, 3, 4)));
+^
+mettle/src/channel.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 18 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+mettle/src/channel.c:174:78: style:inconclusive: Function 'channel_enqueue_buffer_queue' argument 2 names different: declaration 'bq' definition 'q'. [funcArgNamesDifferent]
+ssize_t channel_enqueue_buffer_queue(struct channel *c, struct buffer_queue *q)
+                                                                             ^
+mettle/src/channel.h:76:78: note: Function 'channel_enqueue_buffer_queue' argument 2 names different: declaration 'bq' definition 'q'.
+ssize_t channel_enqueue_buffer_queue(struct channel *c, struct buffer_queue *bq);
+                                                                             ^
+mettle/src/channel.c:174:78: note: Function 'channel_enqueue_buffer_queue' argument 2 names different: declaration 'bq' definition 'q'.
+ssize_t channel_enqueue_buffer_queue(struct channel *c, struct buffer_queue *q)
+                                                                             ^
+mettle/src/channel.c:225:31: style:inconclusive: Function 'channelmgr_add_channel_type' argument 3 names different: declaration 'cb' definition 'cbs'. [funcArgNamesDifferent]
+    struct channel_callbacks *cbs)
+                              ^
+mettle/src/channel.h:51:40: note: Function 'channelmgr_add_channel_type' argument 3 names different: declaration 'cb' definition 'cbs'.
+ char *name, struct channel_callbacks *cb);
+                                       ^
+mettle/src/channel.c:225:31: note: Function 'channelmgr_add_channel_type' argument 3 names different: declaration 'cb' definition 'cbs'.
+    struct channel_callbacks *cbs)
+                              ^
+mettle/src/channel.c:51:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  HASH_DEL(cm->channels, c);
+^
+mettle/src/channel.c:75:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+   HASH_ADD_INT(cm->channels, id, c);
+^
+mettle/src/channel.c:83:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_DEL(c->cm->channels, c);
+^
+mettle/src/channel.c:234:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_ADD_KEYPTR(hh, cm->types, ct->name, strlen(ct->name), ct);
+^
+mettle/src/channel.c:75:0: information: Skipping configuration 'HASH_EMIT_KEYS' since the value of 'HASH_EMIT_KEYS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+   HASH_ADD_INT(cm->channels, id, c);
+^
+mettle/src/channel.c:234:0: information: Skipping configuration 'HASH_EMIT_KEYS' since the value of 'HASH_EMIT_KEYS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_ADD_KEYPTR(hh, cm->types, ct->name, strlen(ct->name), ct);
+^
+mettle/src/channel.c:75:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+   HASH_ADD_INT(cm->channels, id, c);
+^
+mettle/src/channel.c:91:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_FIND_INT(cm->channels, &id, c);
+^
+mettle/src/channel.c:220:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_FIND_STR(cm->types, name, ct);
+^
+mettle/src/channel.c:234:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_ADD_KEYPTR(hh, cm->types, ct->name, strlen(ct->name), ct);
+^
+mettle/src/compat/glob.c:195:7: style: The scope of the variable 'buf' can be reduced. [variableScope]
+ char buf[PATH_MAX];
+      ^
+mettle/src/console.c:299:19: style: Variable 'name' is assigned a value that is never used. [unreadVariable]
+ const char *name = line + 4;
+                  ^
+mettle/src/coreapi.c:170:2: error: Memory leak: extension_copy [memleak]
+ } else {
+ ^
+mettle/src/coreapi.c:105:13: style: Variable 'guid' is assigned a value that is never used. [unreadVariable]
+ char *guid = tlv_packet_get_raw(ctx->req, TLV_TYPE_SESSION_GUID, &guid_len);
+            ^
+mettle/src/crypttlv.c:126:13: style: The scope of the variable 'length' can be reduced. [variableScope]
+     size_t length = 0;
+            ^
+mettle/src/crypttlv.c:100:28: portability: 'p' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    if (aes_decrypt(ctx, p + sizeof(struct tlv_header), tlv_len, result) > 0)
+                           ^
+mettle/src/crypttlv.c:129:40: portability: 'out_buf' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+     unsigned char *tlv_data = out_buf + sizeof(struct tlv_xor_header);
+                                       ^
+mettle/src/crypttlv.c:126:20: style: Variable 'length' is assigned a value that is never used. [unreadVariable]
+     size_t length = 0;
+                   ^
+mettle/src/eio_rmtree.c:139:21: warning: Either the condition 'path==NULL' is redundant or there is possible null pointer dereference: path. [nullPointerRedundantCheck]
+ strncpy(ctx->path, path, PATH_MAX);
+                    ^
+mettle/src/eio_rmtree.c:149:11: note: Assuming that condition 'path==NULL' is not redundant
+ if (path == NULL) {
+          ^
+mettle/src/eio_rmtree.c:139:21: note: Null pointer dereference
+ strncpy(ctx->path, path, PATH_MAX);
+                    ^
+mettle/src/extension.c:30:22: style: Variable 'e' is assigned a value that is never used. [unreadVariable]
+ struct extension *e = arg;
+                     ^
+mettle/src/extensions.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 18 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+mettle/src/extensions.c:144:31: style: Variable 'ep' is assigned a value that is never used. [unreadVariable]
+ struct extension_process *ep = arg;
+                              ^
+mettle/src/extensions.c:108:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  HASH_ADD_INT(em->extensions, command_id, extension_data);
+^
+mettle/src/extensions.c:216:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+   HASH_DEL(mgr->extensions, extension);
+^
+mettle/src/extensions.c:108:0: information: Skipping configuration 'HASH_EMIT_KEYS' since the value of 'HASH_EMIT_KEYS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  HASH_ADD_INT(em->extensions, command_id, extension_data);
+^
+mettle/src/extensions.c:58:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_FIND_INT(mettle_get_extmgr(m)->extensions, &ctx->command_id, ed);
+^
+mettle/src/extensions.c:108:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  HASH_ADD_INT(em->extensions, command_id, extension_data);
+^
+mettle/src/inet_pton.c:128:14: style: The scope of the variable 'xdigits' can be reduced. [variableScope]
+ const char *xdigits, *curtok;
+             ^
+mettle/src/inet_pton.c:181:17: style: Variable 'count_xdigit' is assigned a value that is never used. [unreadVariable]
+   count_xdigit = 0;
+                ^
+mettle/src/json.c:340:29: warning: Redundant assignment of 'm->params[m->num_params]' to itself. [selfAssignment]
+   m->params[m->num_params] = m->params[m->num_params];
+                            ^
+mettle/src/json.c:8:48: style:inconclusive: Function 'json_read_file' argument 1 names different: declaration 'json_file' definition 'filename'. [funcArgNamesDifferent]
+struct json_object *json_read_file(const char *filename)
+                                               ^
+mettle/src/json.h:19:48: note: Function 'json_read_file' argument 1 names different: declaration 'json_file' definition 'filename'.
+struct json_object *json_read_file(const char *json_file);
+                                               ^
+mettle/src/json.c:8:48: note: Function 'json_read_file' argument 1 names different: declaration 'json_file' definition 'filename'.
+struct json_object *json_read_file(const char *filename)
+                                               ^
+mettle/src/json.c:123:48: portability: 'buf' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  while ((obj = json_tokener_parse_ex(tok, buf + offset, last_read - offset))) {
+                                               ^
+mettle/src/json.c:49:30: style: Variable 'rc' is assigned a value that is never used. [unreadVariable]
+  enum json_tokener_error rc = json_tokener_get_error(tok);
+                             ^
+mettle/src/json.h:40:0: information: Skipping configuration '__MINGW_PRINTF_FORMAT' since the value of '__MINGW_PRINTF_FORMAT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ __attribute__((format(METTLE_PRINTF_FORMAT, 3, 4)));
+^
+mettle/src/linenoise.c:352:9: style: The scope of the variable 'nread' can be reduced. [variableScope]
+    int nread, nwritten;
+        ^
+mettle/src/linenoise.c:352:16: style: The scope of the variable 'nwritten' can be reduced. [variableScope]
+    int nread, nwritten;
+               ^
+mettle/src/linenoise.c:477:10: style: The scope of the variable 'seq' can be reduced. [variableScope]
+    char seq[64];
+         ^
+mettle/src/log.c:104:9: style: The scope of the variable 'curtime' can be reduced. [variableScope]
+ time_t curtime;
+        ^
+mettle/src/log.c:161:10: style: The scope of the variable 'va' can be reduced. [variableScope]
+ va_list va;
+         ^
+mettle/src/log.c:163:7: style: The scope of the variable 'timebuf' can be reduced. [variableScope]
+ char timebuf[64];
+      ^
+mettle/src/log.c:164:7: style: The scope of the variable 'usecbuf' can be reduced. [variableScope]
+ char usecbuf[16];
+      ^
+mettle/src/log.c:188:10: style: The scope of the variable 'va' can be reduced. [variableScope]
+ va_list va;
+         ^
+mettle/src/log.c:208:16: style: The scope of the variable 'c' can be reduced. [variableScope]
+ unsigned char c;
+               ^
+mettle/src/main.c:40:10: style: Variable 'l' is assigned a value that is never used. [unreadVariable]
+ FILE *l = stderr;
+         ^
+mettle/src/main.c:43:17: style: Variable 'l' is assigned a value that is never used. [unreadVariable]
+       if (f) l = f;
+                ^
+mettle/src/mettle.c:122:60: style:inconclusive: Function 'mettle_set_session_guid_base64' argument 2 names different: declaration 'uuid_b64' definition 'guid_b64'. [funcArgNamesDifferent]
+int mettle_set_session_guid_base64(struct mettle *m, char *guid_b64)
+                                                           ^
+mettle/src/mettle.h:28:60: note: Function 'mettle_set_session_guid_base64' argument 2 names different: declaration 'uuid_b64' definition 'guid_b64'.
+int mettle_set_session_guid_base64(struct mettle *m, char *uuid_b64);
+                                                           ^
+mettle/src/mettle.c:122:60: note: Function 'mettle_set_session_guid_base64' argument 2 names different: declaration 'uuid_b64' definition 'guid_b64'.
+int mettle_set_session_guid_base64(struct mettle *m, char *guid_b64)
+                                                           ^
+mettle/src/mettle.c:202:19: style: Variable 'm' is assigned a value that is never used. [unreadVariable]
+ struct mettle *m = arg;
+                  ^
+mettle/src/module.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 18 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+mettle/src/module.c:102:4: error: Common reallocarray mistake: 'results' nulled but not freed upon failure [memleakOnRealloc]
+   results = reallocarray(results, *num_modules + 1, sizeof(struct module *));
+   ^
+mettle/src/module.c:130:4: error: Common reallocarray mistake: 'results' nulled but not freed upon failure [memleakOnRealloc]
+   results = reallocarray(results, *num_options + 1, sizeof(struct module_option *));
+   ^
+mettle/src/module.c:117:54: style:inconclusive: Function 'module_option_name' argument 1 names different: declaration 'm' definition 'option'. [funcArgNamesDifferent]
+const char *module_option_name(struct module_option *option)
+                                                     ^
+mettle/src/module.h:45:54: note: Function 'module_option_name' argument 1 names different: declaration 'm' definition 'option'.
+const char *module_option_name(struct module_option *m);
+                                                     ^
+mettle/src/module.c:117:54: note: Function 'module_option_name' argument 1 names different: declaration 'm' definition 'option'.
+const char *module_option_name(struct module_option *option)
+                                                     ^
+mettle/src/module.c:225:18: style: Variable 'msg_len' is assigned a value that is never used. [unreadVariable]
+ ssize_t msg_len = buffer_queue_remove_all(queue, &data);
+                 ^
+mettle/src/module.c:48:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+    HASH_DEL(mm->modules, module);
+^
+mettle/src/module.c:152:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  HASH_ADD_STR(module->options, name, option);
+^
+mettle/src/module.c:270:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  HASH_ADD_STR(m->options, name, option);
+^
+mettle/src/module.c:383:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  HASH_ADD_STR(_mm->modules, fullname, m);
+^
+mettle/src/module.c:152:0: information: Skipping configuration 'HASH_EMIT_KEYS' since the value of 'HASH_EMIT_KEYS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  HASH_ADD_STR(module->options, name, option);
+^
+mettle/src/module.c:270:0: information: Skipping configuration 'HASH_EMIT_KEYS' since the value of 'HASH_EMIT_KEYS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  HASH_ADD_STR(m->options, name, option);
+^
+mettle/src/module.c:383:0: information: Skipping configuration 'HASH_EMIT_KEYS' since the value of 'HASH_EMIT_KEYS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  HASH_ADD_STR(_mm->modules, fullname, m);
+^
+mettle/src/module.c:152:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  HASH_ADD_STR(module->options, name, option);
+^
+mettle/src/module.c:270:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  HASH_ADD_STR(m->options, name, option);
+^
+mettle/src/module.c:383:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+  HASH_ADD_STR(_mm->modules, fullname, m);
+^
+mettle/src/network_client.c:96:22: warning: Either the condition 'uri_tmp==NULL' is redundant or there is possible null pointer dereference: uri_tmp. [nullPointerRedundantCheck]
+ char *host = strstr(uri_tmp, "://");
+                     ^
+mettle/src/network_client.c:101:14: note: Assuming that condition 'uri_tmp==NULL' is not redundant
+ if (uri_tmp == NULL || srv->uri == NULL) {
+             ^
+mettle/src/network_client.c:96:22: note: Null pointer dereference
+ char *host = strstr(uri_tmp, "://");
+                     ^
+mettle/src/network_client.c:261:52: style:inconclusive: Function 'network_client_set_cbs' argument 1 names different: declaration 'be' definition 'nc'. [funcArgNamesDifferent]
+void network_client_set_cbs(struct network_client *nc,
+                                                   ^
+mettle/src/network_client.h:24:52: note: Function 'network_client_set_cbs' argument 1 names different: declaration 'be' definition 'nc'.
+void network_client_set_cbs(struct network_client *be,
+                                                   ^
+mettle/src/network_client.c:261:52: note: Function 'network_client_set_cbs' argument 1 names different: declaration 'be' definition 'nc'.
+void network_client_set_cbs(struct network_client *nc,
+                                                   ^
+mettle/src/network_client.c:342:2: style:inconclusive: Found duplicate branches for 'if' and 'else'. [duplicateBranch]
+ if (strchr(host, ':') != NULL) {
+ ^
+mettle/src/network_client.c:344:4: note: Found duplicate branches for 'if' and 'else'.
+ } else {
+   ^
+mettle/src/network_client.c:342:2: note: Found duplicate branches for 'if' and 'else'.
+ if (strchr(host, ':') != NULL) {
+ ^
+mettle/src/network_client.c:277:36: style: Variable 'srv' is assigned a value that is never used. [unreadVariable]
+ struct network_client_server *srv = get_curr_server(nc);
+                                   ^
+mettle/src/network_client.c:292:36: style: Variable 'srv' is assigned a value that is never used. [unreadVariable]
+ struct network_client_server *srv = get_curr_server(nc);
+                                   ^
+mettle/src/network_client.c:331:16: style: Variable 'port' is assigned a value that is never used. [unreadVariable]
+ uint16_t port = 0;
+               ^
+mettle/src/network_client.c:332:20: style: Variable 'proto' is assigned a value that is never used. [unreadVariable]
+ const char *proto = ai->ai_protocol == IPPROTO_UDP ? "udp" : "tcp";
+                   ^
+mettle/src/network_client.c:335:8: style: Variable 'port' is assigned a value that is never used. [unreadVariable]
+  port = ntohs(s->sin_port);
+       ^
+mettle/src/network_client.c:339:8: style: Variable 'port' is assigned a value that is never used. [unreadVariable]
+  port = ntohs(s->sin6_port);
+       ^
+mettle/src/network_client.c:353:36: style: Variable 'srv' is assigned a value that is never used. [unreadVariable]
+ struct network_client_server *srv = get_curr_server(nc);
+                                   ^
+mettle/src/network_server.c:139:0: information: Skipping configuration 'IPV6_V6ONLY' since the value of 'IPV6_V6ONLY' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ setsockopt(ns->listener, IPPROTO_IPV6, IPV6_V6ONLY, (void *)&v6_only, sizeof(v6_only));
+^
+mettle/src/process.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 18 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+mettle/src/process.c:382:4: error: Memory leak: p [memleak]
+   return NULL;
+   ^
+mettle/src/process.c:386:4: error: Memory leak: p [memleak]
+   return NULL;
+   ^
+mettle/src/process.c:93:3: error: Common realloc mistake: 'buf' nulled but not freed upon failure [memleakOnRealloc]
+  buf = realloc(buf, bufsize);
+  ^
+mettle/src/process.c:58:39: style:inconclusive: Function 'process_get_pid' argument 1 names different: declaration 'p' definition 'process'. [funcArgNamesDifferent]
+pid_t process_get_pid(struct process *process)
+                                      ^
+mettle/src/process.h:89:39: note: Function 'process_get_pid' argument 1 names different: declaration 'p' definition 'process'.
+pid_t process_get_pid(struct process *p);
+                                      ^
+mettle/src/process.c:58:39: note: Function 'process_get_pid' argument 1 names different: declaration 'p' definition 'process'.
+pid_t process_get_pid(struct process *process)
+                                      ^
+mettle/src/process.c:485:23: style:inconclusive: Function 'process_create_from_executable_buf' argument 2 names different: declaration 'elf' definition 'buffer'. [funcArgNamesDifferent]
+ const unsigned char *buffer, struct process_options *opts)
+                      ^
+mettle/src/process.h:44:23: note: Function 'process_create_from_executable_buf' argument 2 names different: declaration 'elf' definition 'buffer'.
+ const unsigned char *elf, struct process_options *opts);
+                      ^
+mettle/src/process.c:485:23: note: Function 'process_create_from_executable_buf' argument 2 names different: declaration 'elf' definition 'buffer'.
+ const unsigned char *buffer, struct process_options *opts)
+                      ^
+mettle/src/process.c:534:38: style:inconclusive: Function 'process_read' argument 1 names different: declaration 'p' definition 'process'. [funcArgNamesDifferent]
+ssize_t process_read(struct process *process, void *buf, size_t buf_len)
+                                     ^
+mettle/src/process.h:64:38: note: Function 'process_read' argument 1 names different: declaration 'p' definition 'process'.
+ssize_t process_read(struct process *p, void *buf, size_t nbyte);
+                                     ^
+mettle/src/process.c:534:38: note: Function 'process_read' argument 1 names different: declaration 'p' definition 'process'.
+ssize_t process_read(struct process *process, void *buf, size_t buf_len)
+                                     ^
+mettle/src/process.c:534:65: style:inconclusive: Function 'process_read' argument 3 names different: declaration 'nbyte' definition 'buf_len'. [funcArgNamesDifferent]
+ssize_t process_read(struct process *process, void *buf, size_t buf_len)
+                                                                ^
+mettle/src/process.h:64:59: note: Function 'process_read' argument 3 names different: declaration 'nbyte' definition 'buf_len'.
+ssize_t process_read(struct process *p, void *buf, size_t nbyte);
+                                                          ^
+mettle/src/process.c:534:65: note: Function 'process_read' argument 3 names different: declaration 'nbyte' definition 'buf_len'.
+ssize_t process_read(struct process *process, void *buf, size_t buf_len)
+                                                                ^
+mettle/src/process.c:548:39: style:inconclusive: Function 'process_write' argument 1 names different: declaration 'p' definition 'process'. [funcArgNamesDifferent]
+ssize_t process_write(struct process *process, const void *buf, size_t buf_len)
+                                      ^
+mettle/src/process.h:59:39: note: Function 'process_write' argument 1 names different: declaration 'p' definition 'process'.
+ssize_t process_write(struct process *p, const void *buf, size_t nbyte);
+                                      ^
+mettle/src/process.c:548:39: note: Function 'process_write' argument 1 names different: declaration 'p' definition 'process'.
+ssize_t process_write(struct process *process, const void *buf, size_t buf_len)
+                                      ^
+mettle/src/process.c:548:72: style:inconclusive: Function 'process_write' argument 3 names different: declaration 'nbyte' definition 'buf_len'. [funcArgNamesDifferent]
+ssize_t process_write(struct process *process, const void *buf, size_t buf_len)
+                                                                       ^
+mettle/src/process.h:59:66: note: Function 'process_write' argument 3 names different: declaration 'nbyte' definition 'buf_len'.
+ssize_t process_write(struct process *p, const void *buf, size_t nbyte);
+                                                                 ^
+mettle/src/process.c:548:72: note: Function 'process_write' argument 3 names different: declaration 'nbyte' definition 'buf_len'.
+ssize_t process_write(struct process *process, const void *buf, size_t buf_len)
+                                                                       ^
+mettle/src/process.c:543:9: portability: 'buf' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    buf + bytes_read, buf_len - bytes_read);
+        ^
+mettle/src/process.c:558:34: portability: 'buf' is of type 'const void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+   n = write(process->in_fd, buf + len, buf_len - len);
+                                 ^
+mettle/src/process.c:283:22: style: Variable 'mgr' is assigned a value that is never used. [unreadVariable]
+ struct procmgr *mgr = process->mgr;
+                     ^
+mettle/src/process.c:286:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_DEL(process->mgr->processes, process);
+^
+mettle/src/process.c:425:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_ADD_INT(mgr->processes, pid, p);
+^
+mettle/src/process.c:584:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+   HASH_DEL(mgr->processes, process);
+^
+mettle/src/process.c:425:0: information: Skipping configuration 'HASH_EMIT_KEYS' since the value of 'HASH_EMIT_KEYS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_ADD_INT(mgr->processes, pid, p);
+^
+mettle/src/process.c:425:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_ADD_INT(mgr->processes, pid, p);
+^
+mettle/src/process.c:524:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_FIND_INT(mgr->processes, &pid, p);
+^
+mettle/src/process_win.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 18 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+mettle/src/process_win.c:51:39: style:inconclusive: Function 'process_get_pid' argument 1 names different: declaration 'p' definition 'process'. [funcArgNamesDifferent]
+pid_t process_get_pid(struct process *process)
+                                      ^
+mettle/src/process.h:89:39: note: Function 'process_get_pid' argument 1 names different: declaration 'p' definition 'process'.
+pid_t process_get_pid(struct process *p);
+                                      ^
+mettle/src/process_win.c:51:39: note: Function 'process_get_pid' argument 1 names different: declaration 'p' definition 'process'.
+pid_t process_get_pid(struct process *process)
+                                      ^
+mettle/src/process_win.c:236:23: style:inconclusive: Function 'process_create_from_executable_buf' argument 2 names different: declaration 'elf' definition 'exe'. [funcArgNamesDifferent]
+ const unsigned char *exe, struct process_options *opts)
+                      ^
+mettle/src/process.h:44:23: note: Function 'process_create_from_executable_buf' argument 2 names different: declaration 'elf' definition 'exe'.
+ const unsigned char *elf, struct process_options *opts);
+                      ^
+mettle/src/process_win.c:236:23: note: Function 'process_create_from_executable_buf' argument 2 names different: declaration 'elf' definition 'exe'.
+ const unsigned char *exe, struct process_options *opts)
+                      ^
+mettle/src/process_win.c:271:38: style:inconclusive: Function 'process_read' argument 1 names different: declaration 'p' definition 'process'. [funcArgNamesDifferent]
+ssize_t process_read(struct process *process, void *buf, size_t buf_len)
+                                     ^
+mettle/src/process.h:64:38: note: Function 'process_read' argument 1 names different: declaration 'p' definition 'process'.
+ssize_t process_read(struct process *p, void *buf, size_t nbyte);
+                                     ^
+mettle/src/process_win.c:271:38: note: Function 'process_read' argument 1 names different: declaration 'p' definition 'process'.
+ssize_t process_read(struct process *process, void *buf, size_t buf_len)
+                                     ^
+mettle/src/process_win.c:271:65: style:inconclusive: Function 'process_read' argument 3 names different: declaration 'nbyte' definition 'buf_len'. [funcArgNamesDifferent]
+ssize_t process_read(struct process *process, void *buf, size_t buf_len)
+                                                                ^
+mettle/src/process.h:64:59: note: Function 'process_read' argument 3 names different: declaration 'nbyte' definition 'buf_len'.
+ssize_t process_read(struct process *p, void *buf, size_t nbyte);
+                                                          ^
+mettle/src/process_win.c:271:65: note: Function 'process_read' argument 3 names different: declaration 'nbyte' definition 'buf_len'.
+ssize_t process_read(struct process *process, void *buf, size_t buf_len)
+                                                                ^
+mettle/src/process_win.c:285:39: style:inconclusive: Function 'process_write' argument 1 names different: declaration 'p' definition 'process'. [funcArgNamesDifferent]
+ssize_t process_write(struct process *process, const void *buf, size_t buf_len)
+                                      ^
+mettle/src/process.h:59:39: note: Function 'process_write' argument 1 names different: declaration 'p' definition 'process'.
+ssize_t process_write(struct process *p, const void *buf, size_t nbyte);
+                                      ^
+mettle/src/process_win.c:285:39: note: Function 'process_write' argument 1 names different: declaration 'p' definition 'process'.
+ssize_t process_write(struct process *process, const void *buf, size_t buf_len)
+                                      ^
+mettle/src/process_win.c:285:72: style:inconclusive: Function 'process_write' argument 3 names different: declaration 'nbyte' definition 'buf_len'. [funcArgNamesDifferent]
+ssize_t process_write(struct process *process, const void *buf, size_t buf_len)
+                                                                       ^
+mettle/src/process.h:59:66: note: Function 'process_write' argument 3 names different: declaration 'nbyte' definition 'buf_len'.
+ssize_t process_write(struct process *p, const void *buf, size_t nbyte);
+                                                                 ^
+mettle/src/process_win.c:285:72: note: Function 'process_write' argument 3 names different: declaration 'nbyte' definition 'buf_len'.
+ssize_t process_write(struct process *process, const void *buf, size_t buf_len)
+                                                                       ^
+mettle/src/process_win.c:280:9: portability: 'buf' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    buf + bytes_read, buf_len - bytes_read);
+        ^
+mettle/src/process_win.c:295:34: portability: 'buf' is of type 'const void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+   n = write(process->in_fd, buf + len, buf_len - len);
+                                 ^
+mettle/src/process_win.c:98:22: style: Variable 'mgr' is assigned a value that is never used. [unreadVariable]
+ struct procmgr *mgr = process->mgr;
+                     ^
+mettle/src/process_win.c:101:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_DEL(process->mgr->processes, process);
+^
+mettle/src/process_win.c:182:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_ADD_INT(mgr->processes, pid, p);
+^
+mettle/src/process_win.c:321:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+   HASH_DEL(mgr->processes, process);
+^
+mettle/src/process_win.c:182:0: information: Skipping configuration 'HASH_EMIT_KEYS' since the value of 'HASH_EMIT_KEYS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_ADD_INT(mgr->processes, pid, p);
+^
+mettle/src/process_win.c:182:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_ADD_INT(mgr->processes, pid, p);
+^
+mettle/src/process_win.c:261:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_FIND_INT(mgr->processes, &pid, p);
+^
+mettle/src/sha1.c:99:4: style: Variable 'a' is assigned a value that is never used. [unreadVariable]
+ a = b = c = d = e = 0;
+   ^
+mettle/src/sha1.c:99:8: style: Variable 'b' is assigned a value that is never used. [unreadVariable]
+ a = b = c = d = e = 0;
+       ^
+mettle/src/sha1.c:99:12: style: Variable 'c' is assigned a value that is never used. [unreadVariable]
+ a = b = c = d = e = 0;
+           ^
+mettle/src/sha1.c:99:16: style: Variable 'd' is assigned a value that is never used. [unreadVariable]
+ a = b = c = d = e = 0;
+               ^
+mettle/src/sha1.c:99:20: style: Variable 'e' is assigned a value that is never used. [unreadVariable]
+ a = b = c = d = e = 0;
+                   ^
+mettle/src/sha2.c:0:0: information: This file is not analyzed. Cppcheck failed to extract a valid configuration. Use -v for more details. [noValidConfiguration]
+
+^
+mettle/src/stdapi/audio/linux_mic.c:38:5: warning: %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'. [invalidPrintfArgType_sint]
+    sprintf(cmd, "arecord -D plughw:%d -q -f cd -t raw -r 11025 -c 1", device);
+    ^
+mettle/src/stdapi/audio/posix_output.c:35:24: portability: 'ctx->buffer' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+    memcpy(ctx->buffer + (ctx->size - len), buf, len);
+                       ^
+mettle/src/stdapi/clipboard/clipboard.c:22:28: style: Variable 'td' is assigned a value that is never used. [unreadVariable]
+ struct tlv_dispatcher *td = mettle_get_tlv_dispatcher(m);
+                           ^
+mettle/src/stdapi/fs/file.c:127:19: style: Variable 'm' is assigned a value that is never used. [unreadVariable]
+ struct mettle *m = ctx->arg;
+                  ^
+mettle/src/stdapi/fs/file.c:62:12: style: struct member 'meterp_stat::atime' is never used. [unusedStructMember]
+  uint64_t atime;
+           ^
+mettle/src/stdapi/fs/file.c:63:12: style: struct member 'meterp_stat::mtime' is never used. [unusedStructMember]
+  uint64_t mtime;
+           ^
+mettle/src/stdapi/fs/file.c:64:12: style: struct member 'meterp_stat::ctime' is never used. [unusedStructMember]
+  uint64_t ctime;
+           ^
+mettle/src/stdapi/fs/file.c:567:0: information: Skipping configuration 'S_ISLNK;__MINGW32__' since the value of 'S_ISLNK' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ if (S_ISLNK(buf->st_mode)) {
+^
+mettle/src/stdapi/net/client.c:339:2: style: Consecutive return, break, continue, goto or throw statements are unnecessary. [duplicateBreak]
+ return 0;
+ ^
+mettle/src/stdapi/net/config.c:327:19: style: Variable 'm' is assigned a value that is never used. [unreadVariable]
+ struct mettle *m = ctx->arg;
+                  ^
+mettle/src/stdapi/net/resolve.c:76:19: style: Variable 'm' is assigned a value that is never used. [unreadVariable]
+ struct mettle *m = ctx->arg;
+                  ^
+mettle/src/stdapi/net/server.c:57:3: error: Memory leak: conn [memleak]
+  return;
+  ^
+mettle/src/stdapi/net/server.c:63:3: error: Memory leak: conn [memleak]
+  return;
+  ^
+mettle/src/stdapi/stdapi.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 15 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+mettle/src/stdapi/sys/process.c:232:19: style: Variable 'm' is assigned a value that is never used. [unreadVariable]
+ struct mettle *m = ctx->arg;
+                  ^
+mettle/src/stdapi/webcam/webcam.c:22:28: style: Variable 'td' is assigned a value that is never used. [unreadVariable]
+ struct tlv_dispatcher *td = mettle_get_tlv_dispatcher(m);
+                           ^
+mettle/src/stdapi/ui/ui.c:24:28: style: Variable 'td' is assigned a value that is never used. [unreadVariable]
+ struct tlv_dispatcher *td = mettle_get_tlv_dispatcher(m);
+                           ^
+mettle/src/stdapi/stdapi.c:24:28: style: Variable 'td' is assigned a value that is never used. [unreadVariable]
+ struct tlv_dispatcher *td = mettle_get_tlv_dispatcher(m);
+                           ^
+mettle/src/stdapi/sys/memory.c:239:4: error: Common realloc mistake: 'printable' nulled but not freed upon failure [memleakOnRealloc]
+   printable = realloc(printable, str_len + MATCH_LEN_MAX);
+   ^
+mettle/src/stdapi/sys/memory.c:319:9: warning: Either the condition 'results==NULL' is redundant or there is possible null pointer dereference: results. [nullPointerRedundantCheck]
+ memset(results, 0, sizeof(struct match_result) * needle_amt * MATCH_PER_NEEDLE_MAX);
+        ^
+mettle/src/stdapi/sys/memory.c:321:13: note: Assuming that condition 'results==NULL' is not redundant
+ if(results == NULL)
+            ^
+mettle/src/stdapi/sys/memory.c:319:9: note: Null pointer dereference
+ memset(results, 0, sizeof(struct match_result) * needle_amt * MATCH_PER_NEEDLE_MAX);
+        ^
+mettle/src/stdapi/sys/memory.c:198:11: style: The scope of the variable 'curr_char' can be reduced. [variableScope]
+ uint32_t curr_char;
+          ^
+mettle/src/stdapi/sys/memory.c:48:10: style: Checking if unsigned expression 'size' is less than zero. [unsignedLessThanZero]
+ if(size <= 0)
+         ^
+mettle/src/stdapi/sys/memory.c:147:10: style: Local variable 'i' shadows outer variable [shadowVariable]
+ for(int i = 0; i < match_num; i++)
+         ^
+mettle/src/stdapi/sys/memory.c:119:22: note: Shadowed declaration
+ struct tlv_iterator i = {
+                     ^
+mettle/src/stdapi/sys/memory.c:147:10: note: Shadow variable
+ for(int i = 0; i < match_num; i++)
+         ^
+mettle/src/stdapi/sys/memory.c:171:10: style: Local variable 'i' shadows outer variable [shadowVariable]
+ for(int i = 0; i < match_num; i++)
+         ^
+mettle/src/stdapi/sys/memory.c:119:22: note: Shadowed declaration
+ struct tlv_iterator i = {
+                     ^
+mettle/src/stdapi/sys/memory.c:171:10: note: Shadow variable
+ for(int i = 0; i < match_num; i++)
+         ^
+mettle/src/stdapi/sys/memory.c:179:14: style: Local variable 'i' shadows outer variable [shadowVariable]
+ for(uint8_t i = 0; i < needles_len; i++)
+             ^
+mettle/src/stdapi/sys/memory.c:119:22: note: Shadowed declaration
+ struct tlv_iterator i = {
+                     ^
+mettle/src/stdapi/sys/memory.c:179:14: note: Shadow variable
+ for(uint8_t i = 0; i < needles_len; i++)
+             ^
+mettle/src/stdapi/sys/memory.c:525:24: style: Variable 'cm' is assigned a value that is never used. [unreadVariable]
+ struct channelmgr *cm = mettle_get_channelmgr(m);
+                       ^
+mettle/src/stdapi/sys/posix_process.c:18:19: style: Variable 'm' is assigned a value that is never used. [unreadVariable]
+ struct mettle *m = ctx->arg;
+                  ^
+mettle/src/stdapi/webcam/linux_webcam.c:220:9: style: Local variable 'fd' shadows outer variable [shadowVariable]
+    int fd = camera_open(i);
+        ^
+mettle/src/stdapi/webcam/linux_webcam.c:29:5: note: Shadowed declaration
+int fd;
+    ^
+mettle/src/stdapi/webcam/linux_webcam.c:220:9: note: Shadow variable
+    int fd = camera_open(i);
+        ^
+mettle/src/tlv.c:0:0: information: Too many #ifdef configurations - cppcheck only checks 12 of 19 configurations. Use --force to check all configurations. [toomanyconfigs]
+
+^
+mettle/src/tlv.c:92:27: style: The statement 'if (str[len-1]!='\0') str[len-1]='\0'' is logically equivalent to 'str[len-1]='\0''. [duplicateConditionalAssign]
+  } else if (str[len - 1] != '\0') {
+                          ^
+mettle/src/tlv.c:93:17: note: Assignment 'str[len-1]='\0''
+   str[len - 1] = '\0';
+                ^
+mettle/src/tlv.c:92:27: note: Condition 'str[len-1]!='\0'' is redundant
+  } else if (str[len - 1] != '\0') {
+                          ^
+mettle/src/tlv.c:667:15: style: Condition 'tlv_len==0' is always false [knownConditionTrueFalse]
+  if (tlv_len == 0) {
+              ^
+mettle/src/tlv.c:655:44: note: Assuming that condition 'tlv_len<8' is not redundant
+  if ((tlv_len > (len - offset) || tlv_len < TLV_MIN_LEN)) {
+                                           ^
+mettle/src/tlv.c:667:15: note: Condition 'tlv_len==0' is always false
+  if (tlv_len == 0) {
+              ^
+mettle/src/tlv.c:90:11: style: Checking if unsigned expression 'len' is less than zero. [unsignedLessThanZero]
+  if (len <= 0) {
+          ^
+mettle/src/tlv.c:122:57: style:inconclusive: Function 'tlv_packet_get_raw' argument 2 names different: declaration 'raw_type' definition 'value_type'. [funcArgNamesDifferent]
+void *tlv_packet_get_raw(struct tlv_packet *p, uint32_t value_type, size_t *len)
+                                                        ^
+mettle/src/tlv.h:63:57: note: Function 'tlv_packet_get_raw' argument 2 names different: declaration 'raw_type' definition 'value_type'.
+void *tlv_packet_get_raw(struct tlv_packet *p, uint32_t raw_type, size_t *len);
+                                                        ^
+mettle/src/tlv.c:122:57: note: Function 'tlv_packet_get_raw' argument 2 names different: declaration 'raw_type' definition 'value_type'.
+void *tlv_packet_get_raw(struct tlv_packet *p, uint32_t value_type, size_t *len)
+                                                        ^
+mettle/src/tlv.c:700:70: style:inconclusive: Function 'tlv_dispatcher_set_session_guid' argument 2 names different: declaration 'uuid' definition 'guid'. [funcArgNamesDifferent]
+int tlv_dispatcher_set_session_guid(struct tlv_dispatcher *td, char *guid)
+                                                                     ^
+mettle/src/tlv.h:178:70: note: Function 'tlv_dispatcher_set_session_guid' argument 2 names different: declaration 'uuid' definition 'guid'.
+int tlv_dispatcher_set_session_guid(struct tlv_dispatcher *td, char *uuid);
+                                                                     ^
+mettle/src/tlv.c:700:70: note: Function 'tlv_dispatcher_set_session_guid' argument 2 names different: declaration 'uuid' definition 'guid'.
+int tlv_dispatcher_set_session_guid(struct tlv_dispatcher *td, char *guid)
+                                                                     ^
+mettle/src/tlv.c:201:20: portability: '(void*)p' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  memcpy((void *)p + packet_len, val, len);
+                   ^
+mettle/src/tlv.c:237:38: portability: '(void*)p' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+  struct tlv_header *hdr = (void *)p + packet_len;
+                                     ^
+mettle/src/tlv.c:500:0: information: Skipping configuration 'HASH_BLOOM' since the value of 'HASH_BLOOM' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_ADD_INT(td->handlers, command_id, handler);
+^
+mettle/src/tlv.c:500:0: information: Skipping configuration 'HASH_EMIT_KEYS' since the value of 'HASH_EMIT_KEYS' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_ADD_INT(td->handlers, command_id, handler);
+^
+mettle/src/tlv.c:500:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_ADD_INT(td->handlers, command_id, handler);
+^
+mettle/src/tlv.c:524:0: information: Skipping configuration 'HASH_FUNCTION' since the value of 'HASH_FUNCTION' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly. [ConfigurationNotChecked]
+ HASH_FIND_INT(td->handlers, &command_id, handler);
+^
+util/elf2bin.c:150:42: portability: '(void*)symb' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+   symb_end = (Elf32_Sym *)((void *)symb + shdr->sh_size);
+                                         ^
+util/elf2bin.c:157:42: portability: '(void*)symb' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+   symb_end = (Elf32_Sym *)((void *)symb + ntohl(shdr->sh_size));
+                                         ^
+util/elf2bin.c:169:42: portability: '(void*)symb' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+   symb_end = (Elf64_Sym *)((void *)symb + shdr->sh_size);
+                                         ^
+util/elf2bin.c:176:42: portability: '(void*)symb' is of type 'void *'. When using void pointers in calculations, the behaviour is undefined. [arithOperationsOnVoidPointer]
+   symb_end = (Elf64_Sym *)((void *)symb + bswap64(shdr->sh_size));
+                                         ^
+mettle/src/base64.c:80:0: style: The function 'base64encode' is never used. [unusedFunction]
+
+^
+mettle/src/buffer_queue.c:78:0: style: The function 'buffer_queue_add_str' is never used. [unusedFunction]
+
+^
+mettle/src/buffer_queue.c:35:0: style: The function 'buffer_queue_drain_all' is never used. [unusedFunction]
+
+^
+mettle/src/bufferev.c:65:0: style: The function 'bufferev_bytes_available' is never used. [unusedFunction]
+
+^
+mettle/src/bufferev.c:70:0: style: The function 'bufferev_peek' is never used. [unusedFunction]
+
+^
+mettle/src/bufferev.c:90:0: style: The function 'bufferev_peek_msg' is never used. [unusedFunction]
+
+^
+mettle/src/c2.c:222:0: style: The function 'c2_egress_queue' is never used. [unusedFunction]
+
+^
+mettle/src/c2.c:194:0: style: The function 'c2_get_current_transport' is never used. [unusedFunction]
+
+^
+mettle/src/c2.c:180:0: style: The function 'c2_read' is never used. [unusedFunction]
+
+^
+mettle/src/c2.c:199:0: style: The function 'c2_transport_ingress_buf' is never used. [unusedFunction]
+
+^
+mettle/src/extension.c:23:0: style: The function 'extension_get_tlv_dispatcher' is never used. [unusedFunction]
+
+^
+mettle/src/extension.c:120:0: style: The function 'extension_log_to_file' is never used. [unusedFunction]
+
+^
+mettle/src/extensions.c:211:0: style: The function 'extmgr_free' is never used. [unusedFunction]
+
+^
+mettle/src/stdapi/fs/file.c:841:0: style: The function 'file_tell' is never used. [unusedFunction]
+
+^
+mettle/src/http_client.c:57:0: style: The function 'http_conn_header_value' is never used. [unusedFunction]
+
+^
+mettle/src/http_client.c:33:0: style: The function 'http_conn_response' is never used. [unusedFunction]
+
+^
+mettle/src/http_client.c:43:0: style: The function 'http_conn_response_raw' is never used. [unusedFunction]
+
+^
+mettle/src/json.c:187:0: style: The function 'json_add_bool' is never used. [unusedFunction]
+
+^
+mettle/src/json.c:177:0: style: The function 'json_add_double' is never used. [unusedFunction]
+
+^
+mettle/src/json.c:142:0: style: The function 'json_add_str_fmt' is never used. [unusedFunction]
+
+^
+mettle/src/json.c:254:0: style: The function 'json_get_bool' is never used. [unusedFunction]
+
+^
+mettle/src/json.c:242:0: style: The function 'json_get_double' is never used. [unusedFunction]
+
+^
+mettle/src/json.c:218:0: style: The function 'json_get_int32' is never used. [unusedFunction]
+
+^
+mettle/src/json.c:44:0: style: The function 'json_read_buf' is never used. [unusedFunction]
+
+^
+mettle/src/json.c:56:0: style: The function 'json_read_bufferev' is never used. [unusedFunction]
+
+^
+mettle/src/json.c:8:0: style: The function 'json_read_file' is never used. [unusedFunction]
+
+^
+mettle/src/json.c:426:0: style: The function 'json_rpc_gen_notification' is never used. [unusedFunction]
+
+^
+mettle/src/json.c:463:0: style: The function 'json_rpc_gen_result_int32' is never used. [unusedFunction]
+
+^
+mettle/src/json.c:475:0: style: The function 'json_rpc_gen_result_int64' is never used. [unusedFunction]
+
+^
+mettle/src/json.c:439:0: style: The function 'json_rpc_gen_result_json' is never used. [unusedFunction]
+
+^
+mettle/src/json.c:451:0: style: The function 'json_rpc_gen_result_str' is never used. [unusedFunction]
+
+^
+mettle/src/linenoise.c:1069:0: style: The function 'linenoiseFree' is never used. [unusedFunction]
+
+^
+mettle/src/linenoise.c:1133:0: style: The function 'linenoiseHistorySetMaxLen' is never used. [unusedFunction]
+
+^
+mettle/src/linenoise.c:955:0: style: The function 'linenoisePrintKeyCodes' is never used. [unusedFunction]
+
+^
+mettle/src/linenoise.c:421:0: style: The function 'linenoiseSetFreeHintsCallback' is never used. [unusedFunction]
+
+^
+mettle/src/linenoise.c:415:0: style: The function 'linenoiseSetHintsCallback' is never used. [unusedFunction]
+
+^
+mettle/src/linenoise.c:201:0: style: The function 'linenoiseSetMultiLine' is never used. [unusedFunction]
+
+^
+mettle/src/mettle_rpc.c:110:0: style: The function 'mettle_rpc_new' is never used. [unusedFunction]
+
+^
+mettle/src/module.c:42:0: style: The function 'modulemgr_free' is never used. [unusedFunction]
+
+^
+mettle/src/posix_win.c:158:0: style: The function 'posix_close' is never used. [unusedFunction]
+
+^
+mettle/src/posix_win.c:149:0: style: The function 'posix_connect' is never used. [unusedFunction]
+
+^
+mettle/src/posix_win.c:66:0: style: The function 'posix_fgets' is never used. [unusedFunction]
+
+^
+mettle/src/posix_win.c:29:0: style: The function 'posix_fopen' is never used. [unusedFunction]
+
+^
+mettle/src/posix_win.c:193:0: style: The function 'posix_getsockopt' is never used. [unusedFunction]
+
+^
+mettle/src/posix_win.c:44:0: style: The function 'posix_open' is never used. [unusedFunction]
+
+^
+mettle/src/posix_win.c:23:0: style: The function 'posix_perror' is never used. [unusedFunction]
+
+^
+mettle/src/posix_win.c:169:0: style: The function 'posix_read' is never used. [unusedFunction]
+
+^
+mettle/src/posix_win.c:80:0: style: The function 'posix_rename' is never used. [unusedFunction]
+
+^
+mettle/src/posix_win.c:202:0: style: The function 'posix_setsockopt' is never used. [unusedFunction]
+
+^
+mettle/src/posix_win.c:181:0: style: The function 'posix_write' is never used. [unusedFunction]
+
+^
+mettle/src/process.c:534:0: style: The function 'process_read' is never used. [unusedFunction]
+
+^
+mettle/src/ringbuf.c:315:0: style: The function 'ringbuf_copy' is never used. [unusedFunction]
+
+^
+mettle/src/ringbuf.c:135:0: style: The function 'ringbuf_head' is never used. [unusedFunction]
+
+^
+mettle/src/ringbuf.c:177:0: style: The function 'ringbuf_memset' is never used. [unusedFunction]
+
+^
+mettle/src/ringbuf.c:236:0: style: The function 'ringbuf_read' is never used. [unusedFunction]
+
+^
+mettle/src/ringbuf.c:129:0: style: The function 'ringbuf_tail' is never used. [unusedFunction]
+
+^
+mettle/src/ringbuf.c:290:0: style: The function 'ringbuf_write' is never used. [unusedFunction]
+
+^
+mettle/src/tlv.c:81:0: style: The function 'tlv_packet_full_len' is never used. [unusedFunction]
+
+^
+mettle/src/tlv.c:157:0: style: The function 'tlv_packet_get_u16' is never used. [unusedFunction]
+
+^
+mettle/src/log.c:186:0: style: The function 'zlog' is never used. [unusedFunction]
+
+^
+mettle/src/log.c:141:0: style: The function 'zlog_finish' is never used. [unusedFunction]
+
+^
+mettle/src/log.c:205:0: style: The function 'zlog_hex' is never used. [unusedFunction]
+
+^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
